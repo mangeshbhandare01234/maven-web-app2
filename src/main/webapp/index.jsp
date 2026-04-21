@@ -3,154 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashok IT Courses Demo</title>
+  <title>DevOps Learning Hub</title>
+
   <style>
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #f3f7fc;
       margin: 0;
-      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #eef2f3, #dfe9f3);
     }
 
     header {
-      background: linear-gradient(135deg, #004aad, #0073e6);
-      color: white;
-      padding: 40px 20px;
+      background: #0f172a;
+      color: #fff;
+      padding: 30px;
       text-align: center;
-      border-bottom-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      opacity: 0.9;
+      margin-top: 8px;
+      color: #cbd5e1;
     }
 
     .container {
-      max-width: 1100px;
-      margin: 50px auto;
-      padding: 0 20px;
+      padding: 40px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
     }
 
-    .course-card {
+    .card {
       background: #fff;
       padding: 25px;
-      border-radius: 20px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
       text-align: center;
+      border-top: 4px solid #3b82f6;
     }
 
-    .course-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    .card:hover {
+      transform: scale(1.05);
     }
 
-    .course-icon {
-      width: 70px;
-      height: 70px;
-      margin: 0 auto 15px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #004aad, #00aaff);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      color: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
     }
 
-    .course-title {
-      font-size: 1.4rem;
+    .title {
+      font-size: 1.3rem;
       font-weight: bold;
-      color: #004aad;
+      color: #1e293b;
       margin-bottom: 10px;
     }
 
-    .course-desc {
-      font-size: 1rem;
-      color: #555;
+    .desc {
+      font-size: 0.95rem;
+      color: #475569;
       margin-bottom: 20px;
-      line-height: 1.5;
-      padding: 0 10px;
     }
 
     .btn {
-      display: inline-block;
       text-decoration: none;
-      background: linear-gradient(135deg, #004aad, #0073e6);
+      padding: 10px 20px;
+      background: #3b82f6;
       color: white;
-      padding: 10px 22px;
-      border-radius: 30px;
-      font-size: 0.95rem;
+      border-radius: 25px;
       transition: 0.3s;
-      font-weight: 500;
     }
 
     .btn:hover {
-      background: linear-gradient(135deg, #00337a, #005bb5);
-      transform: scale(1.07);
+      background: #1d4ed8;
     }
   </style>
-  <!-- Using FontAwesome for icons -->
+
   <script src="https://kit.fontawesome.com/2b5d5a9c8f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-  <header>
-    <h1>🚀 Ashok IT Courses</h1>
-    <p>Upgrade your career with our industry-ready training programs</p>
-  </header>
+<header>
+  <h1>⚙️ DevOps Learning Hub</h1>
+  <p>Build • Deploy • Scale your career with real-world skills</p>
+</header>
 
-  <div class="container">
-    <div class="course-card">
-      <div class="course-icon"><i class="fab fa-java"></i></div>
-      <div class="course-title">Java Full Stack Development</div>
-      <div class="course-desc">
-        Master Core Java, Spring Boot, Microservices, Angular, React & more to become a job-ready full-stack developer.
-      </div>
-      <a href="#" class="btn">Enroll Now</a>
-    </div>
+<div class="container">
 
-    <div class="course-card">
-      <div class="course-icon"><i class="fab fa-python"></i></div>
-      <div class="course-title">Python Full Stack Development</div>
-      <div class="course-desc">
-        Learn Python, Django, REST APIs, React, and advanced deployment strategies for real-world projects.
-      </div>
-      <a href="#" class="btn">Enroll Now</a>
+  <div class="card">
+    <div class="icon"><i class="fab fa-docker"></i></div>
+    <div class="title">Docker Mastery</div>
+    <div class="desc">
+      Learn containerization, build images, manage containers and optimize deployments.
     </div>
-
-    <div class="course-card">
-      <div class="course-icon"><i class="fas fa-cloud"></i></div>
-      <div class="course-title">DevOps with AWS</div>
-      <div class="course-desc">
-        Get hands-on with Docker, Kubernetes, Jenkins, Terraform & AWS Cloud to launch your DevOps career.
-      </div>
-      <a href="#" class="btn">Enroll Now</a>
-    </div>
-
-    <div class="course-card">
-      <div class="course-icon"><i class="fas fa-robot"></i></div>
-      <div class="course-title">Data Science & AI</div>
-      <div class="course-desc">
-        Become industry-ready with Machine Learning, Python, Deep Learning, NLP, and real-time data projects.
-      </div>
-      <a href="#" class="btn">Enroll Now</a>
-    </div>
+    <a href="#" class="btn">Start Learning</a>
   </div>
+
+  <div class="card">
+    <div class="icon"><i class="fas fa-dharmachakra"></i></div>
+    <div class="title">Kubernetes</div>
+    <div class="desc">
+      Orchestrate containers, manage clusters, deployments and scaling in production.
+    </div>
+    <a href="#" class="btn">Explore</a>
+  </div>
+
+  <div class="card">
+    <div class="icon"><i class="fas fa-code-branch"></i></div>
+    <div class="title">CI/CD Pipeline</div>
+    <div class="desc">
+      Automate build, test and deployment using Jenkins and GitHub Actions.
+    </div>
+    <a href="#" class="btn">Build Pipeline</a>
+  </div>
+
+  <div class="card">
+    <div class="icon"><i class="fas fa-cloud"></i></div>
+    <div class="title">AWS Cloud</div>
+    <div class="desc">
+      Deploy scalable apps using EC2, S3, IAM, VPC and real-world cloud architecture.
+    </div>
+    <a href="#" class="btn">Deploy Now</a>
+  </div>
+
+</div>
 
 </body>
 </html>
