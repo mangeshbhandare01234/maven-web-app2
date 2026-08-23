@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     tools{
-        maven 'Maven-3.9.9'
+        maven 'maven'
     }
     stages {
         stage('clone') {
@@ -17,7 +17,7 @@ pipeline {
         }
         stage('docker image'){
             steps {
-                sh 'docker build -t mavenwebapp .'
+                sh 'docker build -t javawebapp .'
             }
         }
         stage('k8s deploy'){
