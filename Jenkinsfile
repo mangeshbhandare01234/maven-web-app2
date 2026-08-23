@@ -17,7 +17,7 @@ pipeline {
         }
         stage('docker image'){
             steps {
-                sh 'docker build -t javawebapp .'
+                sh 'docker build -t mvnwebapp .'
             }
         }
         stage('k8s deploy'){
